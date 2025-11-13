@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="good.css">
+<section id="academics">
+    <h2>Our Academics</h2>
+    <p>We offer a rich curriculum designed to develop strong literacy, numeracy, and life skills. Our students excel in both academics and co-curricular activities.</p>
+    <p>The children study from the morning to the afternoon</p>
+    <p>The children study all the subjects</p>
+    <p>The children in these school are always doing their best to attain the best at the end of p7</p>
+    <p>in the past 2 years our children have passed i the first and second division</p>
+    <p>On top of the studies ,the children also have different relaxations and times when they can refresh their minds for example</p>
+    <ul>
+        <li>Music dance and drama</li>
+        <li>The speech days</li>
+        <li>Talent shows and many others</li>
+    </ul>
+    <p>all these can be seen in the website gallery.</p>
+
+
+    <div class="pass">
+        <div class="pass1">
+            <p>this is the progress we have had we the primary seven children over the years in terms of first division</p>
+            <p>We started writing the primary leaving examinations in 2021 and so far things are going well</p>
+            <div class="pass2">
+                <div class="pass3">2021</div>
+                <div class="pass4">
+                    <div class="pass5" per="20%" style="max-width: 90%;">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pass2">
+                <div class="pass3">2022</div>
+                <div class="pass4">
+                    <div class="pass5" per="40%" style="max-width: 90%;">
+                    </div>
+                </div>
+            </div>
+            <div class="pass2">
+                <div class="pass3">2023</div>
+                <div class="pass4">
+                    <div class="pass5" per="45%" style="max-width: 90%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="teachers">
+    <h3>Our Teachers</h3>
+    <p>We are proud of our team of experienced and dedicated teachers who guide and inspire our learners daily.</p>
+    <p>We have few staff because of the few number of students at goodlife </p>
+    <p>The teachers are about seven in number but are always doing their best to accomplish tasks</p>
+    <p>and the children always do better all the time.</p>
+</section>
+<script src="good.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const bars = document.querySelectorAll(".pass5");
+
+        // Target progress values for each year
+        const progressData = [{
+                width: 20,
+                color: "#4caf50"
+            }, // 2021
+            {
+                width: 40,
+                color: "#2196f3"
+            }, // 2022
+            {
+                width: 45,
+                color: "#ff9800"
+            }, // 2023
+            {
+                width: 0,
+                color: "#f44336"
+            } // 2024
+        ];
+
+        bars.forEach((bar, index) => {
+            const {
+                width,
+                color
+            } = progressData[index];
+            bar.style.backgroundColor = color;
+            let current = 0;
+
+            // Delay each bar’s animation a bit
+            setTimeout(() => {
+                const interval = setInterval(() => {
+                    if (current >= width) {
+                        clearInterval(interval);
+                    } else {
+                        current++;
+                        bar.style.width = current + "%";
+                        bar.textContent = current + "%";
+                    }
+                }, 25); // speed of animation (smaller = faster)
+            }, index * 800);
+        });
+    });
+</script>

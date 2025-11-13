@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    color: #a3bdd8;
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about {
+    text-align: justify;
+}
+
+.hero {
+    background-color: lightblue;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    box-shadow: 0 22px 30px rgba(5, 4, 4, 0.7);
+    border-radius: 60px;
+    width: 1000px;
+    margin: 20x auto;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    shape-rendering: geometricPrecision;
+    justify-content: center;
+}
+
+.profile-boxes {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    background-color: whitesmoke;
+}
+
+.profile-text {
+    font-size: 16px;
+    color: #333;
+    display: inline-block;
+    background-color: #f9f9f9;
+    border: 1x solid #ddd;
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 250px;
+    vertical-align: top;
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004d99;
+}
+
+h2 {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.for-better {
+    font-size: 20px;
+    color: blue;
+    display: inline-block;
+    background-color: azure;
+    border: 1x solid #ddd;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+    width: 250px;
+    vertical-align: top;
+    line-height: 8;
+    word-spacing: 2px;
+    font-weight: bolder;
+    margin-left: 150px;
+}
+
+.images-only {
+    display: flex;
+    gap: 10px;
+    box-shadow: 0 25px 34px rgba(5, 4, 4, 0.7);
+    border-radius: 60px;
+    width: 1000px;
+    margin: 18x auto;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-left: 40px;
+}
+
+.pass {
+    width: 80%;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+.pass2 {
+    margin: 25px 0;
+}
+
+.pass3 {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.pass4 {
+    width: 100%;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pass5 {
+    height: 100%;
+    width: 0;
+    border-radius: 12px;
+    transition: width 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer {
+    color: #a3bdd8;
+    text-align: center;
+    margin-top: 30px;
+    background-color: green;
+    margin-top: 30px;
+    background-color: green;
+}
